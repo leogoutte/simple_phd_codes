@@ -1,6 +1,6 @@
 module basic_codes
 
-export get_liouvillian, plot_wigner, completevec, get_lowlying
+export get_liouvillian, plot_wigner, completevec, get_lowlying, hello
 
     function get_liouvillian(N::Int, Delta::Real, tg::Real, k1::Real, kphi::Real)
         """
@@ -119,5 +119,9 @@ export get_liouvillian, plot_wigner, completevec, get_lowlying
         end
         return Λl, ρl
     end # get_lowlying
+
+    function hello()
+        println("Hello")
+    end
 
 end;
